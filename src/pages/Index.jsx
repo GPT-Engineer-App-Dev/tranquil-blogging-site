@@ -1,5 +1,6 @@
-import { Container, Text, VStack, Heading, Box, Image, Link, HStack } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, Image, Link, HStack, Button } from "@chakra-ui/react";
 import { FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
+import { Link as RouterLink } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -21,6 +22,7 @@ const Index = () => {
             <FaGithub size="30px" />
           </Link>
         </HStack>
+        <Button as={RouterLink} to="/add-post" colorScheme="teal" size="lg">Add New Post</Button>
       </VStack>
     </Container>
   );
